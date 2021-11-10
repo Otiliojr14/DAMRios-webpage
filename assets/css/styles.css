@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* Estilos globales */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+main {
+  max-width: 1200px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.header__nav, main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Página principal */
+.header__nav {
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.header__nav .nav-logo {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__nav .nav-logo img {
+  width: 100%;
+}
+.header__nav .nav-menu {
+  width: 100%;
+}
+.header__nav .nav-menu a {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+  margin: 5px 0;
+}
+
+.header-carrousel {
+  height: 350px;
+  background-color: indianred;
+}

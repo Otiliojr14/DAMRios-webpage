@@ -1,0 +1,33 @@
+.header__nav {
+  @extend %contenedorMovil;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .nav-logo {
+    width: 40%;
+    display: flex;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .nav-menu {
+    width: 100%;
+
+    a {
+      display: block;
+      text-align: center;
+      padding: 10px 15px;
+      margin: 5px 0;
+    }
+  }
+}
+
+.header-carrousel {
+  height: 350px;
+  background-color: indianred;
+}
