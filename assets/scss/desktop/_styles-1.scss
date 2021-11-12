@@ -13,6 +13,12 @@
     a {
       padding: 5px 25px;
       border-left: 3px solid hsl(0, 0, 90);
+      border-bottom: none;
+
+      &:hover {
+        text-decoration: underline;
+        background-color: unset;
+      }
     }
     a:first-child {
       border-left: none;
@@ -21,4 +27,83 @@
 }
 .header-carrousel {
   height: 550px;
+}
+
+.index-careers {
+  .careers__container-desktop {
+    display: block;
+
+    .career-names {
+      display: flex;
+
+      article {
+        flex-grow: 1;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: hsl(0, 0%, 100%);
+        text-align: center;
+        padding: 10px 0;
+        transition: flex-grow 0.2s ease;
+
+        &:hover {
+          flex-grow: 3;
+        }
+      }
+
+      .enfermeria {
+        background-color: hsl(171, 69%, 51%);
+      }
+      .administracion {
+        background-color: hsl(0, 83%, 53%);
+      }
+      .acuacultura {
+        background-color: hsl(111, 64%, 39%);
+      }
+      .informatica {
+        background-color: hsl(214, 53%, 51%);
+      }
+      .alimentos {
+        background-color: hsl(49, 94%, 49%);
+      }
+    }
+
+    .information-career {
+      background-image: url(../img/nursing.jpg);
+      background-position: center center;
+      background-size: cover;
+      height: 350px;
+    }
+  }
+  .careers__container-mobile {
+    display: none;
+  }
+}
+
+.index-events,
+.index-processes {
+  .events__container,
+  .processes__container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+  }
+}
+
+footer {
+  .footer-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    article {
+      align-self: start;
+    }
+
+    .footer-badge {
+      position: relative;
+      .footer-image-logo {
+        position: absolute;
+        top: -60px;
+      }
+    }
+  }
 }

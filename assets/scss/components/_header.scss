@@ -1,13 +1,13 @@
 .header__nav {
   @extend %contenedorMovil;
-  padding: 15px 0;
+  padding: 5px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 
   .nav-logo {
-    width: 40%;
+    width: 35%;
     display: flex;
 
     img {
@@ -22,7 +22,16 @@
       display: block;
       text-align: center;
       padding: 10px 15px;
-      margin: 5px 0;
+      border-bottom: 3px solid hsl(0, 0, 90);
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: hsl(0, 0, 90);
+      }
+    }
+
+    a:last-child {
+      border-bottom: none;
     }
   }
 }

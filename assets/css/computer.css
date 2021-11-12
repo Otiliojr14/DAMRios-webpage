@@ -25,10 +25,11 @@ a {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 main {
+  padding: 20px 0;
   max-width: 1200px;
 }
 
@@ -36,6 +37,7 @@ h1 {
   text-align: center;
   font-size: 3rem;
   font-style: italic;
+  margin-bottom: 15px;
 }
 
 main {
@@ -69,6 +71,11 @@ main {
 .header__nav .nav-menu a {
   padding: 5px 25px;
   border-left: 3px solid #e6e6e6;
+  border-bottom: none;
+}
+.header__nav .nav-menu a:hover {
+  text-decoration: underline;
+  background-color: unset;
 }
 .header__nav .nav-menu a:first-child {
   border-left: none;
@@ -76,4 +83,106 @@ main {
 
 .header-carrousel {
   height: 550px;
+}
+
+.index-careers .careers__container-desktop {
+  display: block;
+}
+.index-careers .careers__container-desktop .career-names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.index-careers .careers__container-desktop .career-names article {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  -webkit-transition: flex-grow 0.2s ease, -webkit-box-flex 0.2s ease;
+  transition: flex-grow 0.2s ease, -webkit-box-flex 0.2s ease;
+  transition: flex-grow 0.2s ease;
+  transition: flex-grow 0.2s ease, -webkit-box-flex 0.2s ease, -ms-flex-positive 0.2s ease;
+}
+.index-careers .careers__container-desktop .career-names article:hover {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+.index-careers .careers__container-desktop .career-names .enfermeria {
+  background-color: #2cd8be;
+}
+.index-careers .careers__container-desktop .career-names .administracion {
+  background-color: #eb2424;
+}
+.index-careers .careers__container-desktop .career-names .acuacultura {
+  background-color: #37a324;
+}
+.index-careers .careers__container-desktop .career-names .informatica {
+  background-color: #4079c4;
+}
+.index-careers .careers__container-desktop .career-names .alimentos {
+  background-color: #f2c707;
+}
+.index-careers .careers__container-desktop .information-career {
+  background-image: url(../img/nursing.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 350px;
+}
+.index-careers .careers__container-mobile {
+  display: none;
+}
+
+.index-events .events__container,
+.index-events .processes__container,
+.index-processes .events__container,
+.index-processes .processes__container {
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+}
+
+.index-events .events__container > *:nth-child(1), .index-events .processes__container > *:nth-child(1), .index-processes .events__container > *:nth-child(1), .index-processes .processes__container > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.index-events .events__container > *:nth-child(2), .index-events .processes__container > *:nth-child(2), .index-processes .events__container > *:nth-child(2), .index-processes .processes__container > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.index-events .events__container > *:nth-child(3), .index-events .processes__container > *:nth-child(3), .index-processes .events__container > *:nth-child(3), .index-processes .processes__container > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.index-events .events__container > *:nth-child(4), .index-events .processes__container > *:nth-child(4), .index-processes .events__container > *:nth-child(4), .index-processes .processes__container > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+
+footer .footer-information {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+footer .footer-information article {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+footer .footer-information .footer-badge {
+  position: relative;
+}
+footer .footer-information .footer-badge .footer-image-logo {
+  position: absolute;
+  top: -60px;
 }
