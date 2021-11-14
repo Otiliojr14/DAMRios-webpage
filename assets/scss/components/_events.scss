@@ -1,5 +1,7 @@
 .index-events,
 .index-processes {
+  @extend %contenedorMovil;
+  max-width: $maxWidthContainer;
   padding: 20px 0;
 
   .events__container,

@@ -27,8 +27,8 @@ a {
 
 main {
   padding: 20px 0;
-  @extend %contenedorMovil;
-  max-width: $maxWidthContainer;
+  // @extend %contenedorMovil;
+  // max-width: $maxWidthContainer;
 }
 
 h1 {

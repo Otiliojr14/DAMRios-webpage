@@ -1,4 +1,6 @@
 .index-careers {
+  @extend %contenedorMovil;
+  max-width: $maxWidthContainer;
   padding: 20px 0;
   .careers__container-desktop {
     display: none;
@@ -42,5 +44,18 @@
   }
   .alimentos {
     background-color: hsl(49, 94%, 49%);
+  }
+}
+
+.map__section {
+  padding: 20px 0;
+  .map__container {
+    height: 400px;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
   }
 }
