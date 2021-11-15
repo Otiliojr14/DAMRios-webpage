@@ -10,6 +10,7 @@ footer {
   );
   color: hsl(0, 0, 100);
   text-align: center;
+  margin-top: 30px;
   .footer-information {
     @extend %contenedorMovil;
     max-width: $maxWidthContainer;

@@ -43,8 +43,12 @@ h1 {
   border: 1px solid gray;
 }
 
+.principal__container {
+  padding: 0;
+}
+
 footer .footer-information, .index-events,
-.index-processes, .index-careers, .header__nav {
+.index-processes, .index-careers, .header__nav .nav__container {
   width: 90%;
   margin: 0 auto;
 }
@@ -52,6 +56,13 @@ footer .footer-information, .index-events,
 /* Página principal */
 .header__nav {
   padding: 5px 0;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  -webkit-box-shadow: 0px 0px 10px 0px #000000;
+  box-shadow: 0px 0px 10px 0px #000000;
+}
+.header__nav .nav__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,22 +74,21 @@ footer .footer-information, .index-events,
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: white;
 }
-.header__nav .nav-logo {
+.header__nav .nav__container .nav-logo {
   width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.header__nav .nav-logo img {
+.header__nav .nav__container .nav-logo img {
   width: 100%;
 }
-.header__nav .nav-menu {
+.header__nav .nav__container .nav-menu {
   width: 100%;
   display: none;
 }
-.header__nav .nav-menu a {
+.header__nav .nav__container .nav-menu a {
   display: block;
   text-align: center;
   padding: 10px 15px;
@@ -86,10 +96,10 @@ footer .footer-information, .index-events,
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-.header__nav .nav-menu a:hover {
+.header__nav .nav__container .nav-menu a:hover {
   background-color: #e6e6e6;
 }
-.header__nav .nav-menu a:last-child {
+.header__nav .nav__container .nav-menu a:last-child {
   border-bottom: none;
 }
 
@@ -229,6 +239,7 @@ footer {
   background-image: linear-gradient(to top, #2a2a22, #36312c, #3e3938, #444243, #4b4b4b);
   color: white;
   text-align: center;
+  margin-top: 30px;
 }
 footer .footer-information {
   max-width: 1200px;

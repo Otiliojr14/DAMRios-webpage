@@ -1,39 +1,45 @@
 .header__nav {
-  @extend %contenedorMovil;
   padding: 5px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   background-color: hsl(0, 0%, 100%);
+  position: sticky;
+  top: 0;
+  -webkit-box-shadow: 0px 0px 10px 0px #000000;
+  box-shadow: 0px 0px 10px 0px #000000;
 
-  .nav-logo {
-    width: 35%;
+  .nav__container {
+    @extend %contenedorMovil;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .nav-logo {
+      width: 35%;
+      display: flex;
 
-    img {
-      width: 100%;
-    }
-  }
-
-  .nav-menu {
-    width: 100%;
-    display: none;
-
-    a {
-      display: block;
-      text-align: center;
-      padding: 10px 15px;
-      border-bottom: 3px solid hsl(0, 0, 90);
-      transition: background-color 0.3s ease;
-
-      &:hover {
-        background-color: hsl(0, 0, 90);
+      img {
+        width: 100%;
       }
     }
 
-    a:last-child {
-      border-bottom: none;
+    .nav-menu {
+      width: 100%;
+      display: none;
+
+      a {
+        display: block;
+        text-align: center;
+        padding: 10px 15px;
+        border-bottom: 3px solid hsl(0, 0, 90);
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: hsl(0, 0, 90);
+        }
+      }
+
+      a:last-child {
+        border-bottom: none;
+      }
     }
   }
 }
