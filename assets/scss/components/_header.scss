@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  background-color: hsl(0, 0%, 100%);
 
   .nav-logo {
     width: 35%;
@@ -17,6 +18,7 @@
 
   .nav-menu {
     width: 100%;
+    display: none;
 
     a {
       display: block;

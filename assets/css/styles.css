@@ -39,6 +39,10 @@ h1 {
   margin-bottom: 15px;
 }
 
+.presionado {
+  border: 1px solid gray;
+}
+
 footer .footer-information, .index-events,
 .index-processes, .index-careers, .header__nav {
   width: 90%;
@@ -59,6 +63,7 @@ footer .footer-information, .index-events,
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: white;
 }
 .header__nav .nav-logo {
   width: 35%;
@@ -71,6 +76,7 @@ footer .footer-information, .index-events,
 }
 .header__nav .nav-menu {
   width: 100%;
+  display: none;
 }
 .header__nav .nav-menu a {
   display: block;

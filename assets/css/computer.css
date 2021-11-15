@@ -39,6 +39,10 @@ h1 {
   margin-bottom: 15px;
 }
 
+.presionado {
+  border: 1px solid gray;
+}
+
 .header__nav {
   max-width: 1200px;
 }
@@ -54,6 +58,7 @@ h1 {
   display: none;
 }
 .header__nav .nav-menu {
+  display: unset;
   width: unset;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,10 +130,47 @@ h1 {
   background-color: #f2c707;
 }
 .index-careers .careers__container-desktop .information-career {
+  height: 350px;
+  background-color: #e0e0e0;
+}
+.index-careers .careers__container-desktop .information-career .enfermeria {
   background-image: url(../img/nursing.jpg);
   background-position: center center;
   background-size: cover;
-  height: 350px;
+  height: 100%;
+}
+.index-careers .careers__container-desktop .information-career .container__career {
+  background: linear-gradient(302deg, black 5%, black 10%, rgba(255, 255, 255, 0) 85%);
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.index-careers .careers__container-desktop .information-career .container__career .info {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  text-transform: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: start;
+}
+.index-careers .careers__container-desktop .information-career .container__career .info .enlace {
+  text-align: center;
+}
+.index-careers .careers__container-desktop .information-career .container__career .info a {
+  text-transform: uppercase;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
 }
 .index-careers .careers__container-mobile {
   display: none;

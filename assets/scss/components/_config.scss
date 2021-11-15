@@ -27,8 +27,6 @@ a {
 
 main {
   padding: 20px 0;
-  // @extend %contenedorMovil;
-  // max-width: $maxWidthContainer;
 }
 
 h1 {
@@ -36,4 +34,8 @@ h1 {
   font-size: 3rem;
   font-style: italic;
   margin-bottom: 15px;
+}
+
+.presionado {
+  border: 1px solid gray;
 }

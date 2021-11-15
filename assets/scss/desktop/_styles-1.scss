@@ -6,6 +6,7 @@
     display: none;
   }
   .nav-menu {
+    display: unset;
     width: unset;
     display: flex;
     justify-content: end;
@@ -71,10 +72,47 @@
     }
 
     .information-career {
-      background-image: url(../img/nursing.jpg);
-      background-position: center center;
-      background-size: cover;
       height: 350px;
+      background-color: hsl(0, 0%, 88%);
+      .enfermeria {
+        background-image: url(../img/nursing.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 100%;
+      }
+
+      .container__career {
+        background: linear-gradient(
+          302deg,
+          black 5%,
+          black 10%,
+          rgba(255, 255, 255, 0) 85%
+        );
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .info {
+          grid-column: 2 / 3;
+          text-transform: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          text-align: start;
+
+          .enlace {
+            text-align: center;
+          }
+
+          a {
+            text-transform: uppercase;
+            color: hsl(0, 0%, 100%);
+            border: 2px solid hsl(0, 0%, 100%);
+            padding: 10px 20px;
+          }
+          // align-items: ;
+        }
+      }
     }
   }
   .careers__container-mobile {
