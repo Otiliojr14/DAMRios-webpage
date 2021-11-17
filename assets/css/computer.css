@@ -85,7 +85,7 @@ h1 {
 }
 
 .header-carrousel {
-  height: 550px;
+  height: auto;
 }
 
 .index-careers .careers__container-desktop {
