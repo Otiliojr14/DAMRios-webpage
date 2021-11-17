@@ -76,11 +76,33 @@
     .information-career {
       height: 350px;
       background-color: hsl(0, 0%, 88%);
-      .enfermeria {
+      .enfermeria__container {
         background-image: url(../img/nursing.jpg);
         background-position: center center;
         background-size: cover;
         height: 100%;
+
+        .enlace a {
+          transition: background-color 0.2s ease;
+          &:hover {
+            background-color: hsl(171, 69%, 51%);
+          }
+        }
+      }
+
+      .administracion__container {
+        background-image: url(../img/administracion.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 100%;
+        display: none;
+
+        .enlace a {
+          transition: background-color 0.2s ease;
+          &:hover {
+            background-color: hsl(0, 83%, 53%);
+          }
+        }
       }
 
       .container__career {
@@ -100,10 +122,12 @@
           display: flex;
           flex-direction: column;
           justify-content: space-around;
-          text-align: start;
+          grid-column-gap: 20px;
+          text-align: end;
+          padding: 20px;
 
           .enlace {
-            text-align: center;
+            text-align: end;
           }
 
           a {

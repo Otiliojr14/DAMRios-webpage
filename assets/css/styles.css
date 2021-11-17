@@ -28,6 +28,10 @@ a {
   font-size: 1.8rem;
 }
 
+.none {
+  display: none;
+}
+
 main {
   padding: 20px 0;
 }

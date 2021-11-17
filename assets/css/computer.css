@@ -28,6 +28,10 @@ a {
   font-size: 1.8rem;
 }
 
+.none {
+  display: none;
+}
+
 main {
   padding: 20px 0;
 }
@@ -137,11 +141,32 @@ h1 {
   height: 350px;
   background-color: #e0e0e0;
 }
-.index-careers .careers__container-desktop .information-career .enfermeria {
+.index-careers .careers__container-desktop .information-career .enfermeria__container {
   background-image: url(../img/nursing.jpg);
   background-position: center center;
   background-size: cover;
   height: 100%;
+}
+.index-careers .careers__container-desktop .information-career .enfermeria__container .enlace a {
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.index-careers .careers__container-desktop .information-career .enfermeria__container .enlace a:hover {
+  background-color: #2cd8be;
+}
+.index-careers .careers__container-desktop .information-career .administracion__container {
+  background-image: url(../img/administracion.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  display: none;
+}
+.index-careers .careers__container-desktop .information-career .administracion__container .enlace a {
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.index-careers .careers__container-desktop .information-career .administracion__container .enlace a:hover {
+  background-color: #eb2424;
 }
 .index-careers .careers__container-desktop .information-career .container__career {
   background: linear-gradient(302deg, black 5%, black 10%, rgba(255, 255, 255, 0) 85%);
@@ -165,10 +190,12 @@ h1 {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  text-align: start;
+  grid-column-gap: 20px;
+  text-align: end;
+  padding: 20px;
 }
 .index-careers .careers__container-desktop .information-career .container__career .info .enlace {
-  text-align: center;
+  text-align: end;
 }
 .index-careers .careers__container-desktop .information-career .container__career .info a {
   text-transform: uppercase;

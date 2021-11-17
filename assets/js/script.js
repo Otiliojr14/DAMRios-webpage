@@ -4,8 +4,14 @@ $(function () {
         $('.nav-menu-movil').toggleClass('presionado');
     });
 
-    $('.career-names article').mouseover(function () { 
-        console.log('Sobre carrera');
+    $('.career-names article').click(function () { 
+        $('.information-career article').fadeOut();
+        $().addClass('none');
+        setTimeout(() => {
+            var carrera = $(this).attr('class');      
+        $('.' + carrera + '__container').fadeIn();
+        }, 350);
+        
     });
     
     
