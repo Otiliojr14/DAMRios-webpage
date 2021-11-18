@@ -118,6 +118,7 @@ h1 {
   -webkit-box-flex: 3;
       -ms-flex-positive: 3;
           flex-grow: 3;
+  cursor: pointer;
 }
 .index-careers .careers__container-desktop .career-names .enfermeria {
   background-color: #2cd8be;
@@ -167,6 +168,62 @@ h1 {
 }
 .index-careers .careers__container-desktop .information-career .administracion__container .enlace a:hover {
   background-color: #eb2424;
+}
+.index-careers .careers__container-desktop .information-career .acuacultura__container {
+  background-image: url(../img/acuacultura.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  display: none;
+}
+.index-careers .careers__container-desktop .information-career .acuacultura__container .enlace a {
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.index-careers .careers__container-desktop .information-career .acuacultura__container .enlace a:hover {
+  background-color: #37a324;
+}
+.index-careers .careers__container-desktop .information-career .informatica__container {
+  background-image: url(../img/informatica.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  display: none;
+}
+.index-careers .careers__container-desktop .information-career .informatica__container .enlace a {
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.index-careers .careers__container-desktop .information-career .informatica__container .enlace a:hover {
+  background-color: #4079c4;
+}
+.index-careers .careers__container-desktop .information-career .derecho__container {
+  background-image: url(../img/derecho.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  display: none;
+}
+.index-careers .careers__container-desktop .information-career .derecho__container .enlace a {
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.index-careers .careers__container-desktop .information-career .derecho__container .enlace a:hover {
+  background-color: #aa4908;
+}
+.index-careers .careers__container-desktop .information-career .alimentos__container {
+  background-image: url(../img/alimentos.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  display: none;
+}
+.index-careers .careers__container-desktop .information-career .alimentos__container .enlace a {
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.index-careers .careers__container-desktop .information-career .alimentos__container .enlace a:hover {
+  background-color: #f2c707;
 }
 .index-careers .careers__container-desktop .information-career .container__career {
   background: linear-gradient(302deg, black 5%, black 10%, rgba(255, 255, 255, 0) 85%);
