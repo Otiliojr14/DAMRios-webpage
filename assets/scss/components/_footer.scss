@@ -38,6 +38,16 @@ footer {
         justify-content: space-between;
         position: relative;
         top: -45px;
+
+        a {
+          color: hsl(0, 0, 100);
+          font-size: 2.6rem;
+          transition: transform 0.2s ease;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
       }
       .footer__title {
         position: relative;

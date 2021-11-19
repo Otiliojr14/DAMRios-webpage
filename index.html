@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/styles.css">    
     <link rel="stylesheet" href="./assets/css/computer.css" media="(min-width: 768px)">
     <title>Inicio</title>
 </head>
-<body>
-    <main class="principal__container">
+<body>        
+    <header>
+        <section class="header-cover">
+            <div class="cover__container">
+                <nav class="header-social">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                </nav>
+                <section class="header-title">
+                    <h1>División Académica Multidisciplinaria de los Ríos</h1>
+                    <h2>Universidad Juárez Autónoma de Tabasco</h2>
+                </section>
+            </div>            
+        </section>
+    </header>
+    <main>
         <nav class="header__nav">
             <section class="nav__container">
                 <figure class="nav-logo">
@@ -28,235 +41,182 @@
                 </nav>
             </section>            
         </nav>
-        <header>
-            <section class="header-carrousel">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/college-open-house-invitation-banner-design-template-64bb82e1fda7fcd9e6fec7e1fcb13be9_screen.jpg?ts=1566569378" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>First slide label</h5>
-                          <p>Some representative placeholder content for the first slide.</p>
+        <section id="carreras" class="index-careers">
+            <h1>Carreras</h1>
+            <section class="careers__container-desktop">
+                <div class="career-names">
+                    <article class="enfermeria">
+                        <p>Enfermería</p>
+                    </article>
+                    <article class="administracion">
+                        <p>Administración</p>
+                    </article>
+                    <article class="acuacultura">
+                        <p>Acuacultura</p>
+                    </article>
+                    <article class="informatica">
+                        <p>Informática</p>
+                    </article>
+                    <article class="derecho">
+                        <p>Derecho</p>
+                    </article>
+                    <article class="alimentos">
+                        <p>Alimentos</p>
+                    </article>
+                </div>
+                <div class="information-career">
+                    <article class="enfermeria__container">
+                        <div class="container__career">
+                            <div class="info">
+                                <h2>Licenciatura en Enfermería</h2>
+                                <p>Formar profesionales de la enfermería con sólidas bases científicas, metodológicas, tecnológicas y humanísticas para brindar cuidado, a las personas y a las familias durante los estados de salud y enfermedad, en el marco de los sistemas de atención a la salud, aplicando el proceso de enfermería basado enlas teorías de la disciplina</p>
+                                <div class="enlace">
+                                    <a href="">Más información</a>
+                                </div>                                
+                            </div>
                         </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pre-school-fair-facebook-banner-template-design-d1293136c8886ab1d003e4827cfe2892_screen.jpg?ts=1566569447" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Second slide label</h5>
-                          <p>Some representative placeholder content for the second slide.</p>
+                    </article>
+                    <article class="administracion__container">
+                        <div class="container__career">
+                            <div class="info">
+                                <h2>Licenciatura en Administración</h2>
+                                <p>Formar profesionales en administración capaces de desarrollar innovaciones e interpretar tendencias económicas, sociales, políticas, culturales, ambientales y tecnológicas que impacten directamente en la calidad de los organismos públicos, privados y sociales; lo que permitirá formar un profesional capaz de solucionar problemáticas y tomar decisiones dentro de un marco de valores éticos y humanísticos.</p>
+                                <div class="enlace">
+                                    <a href="">Más información</a>
+                                </div>                                
+                            </div>
                         </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-university-admission-banner-template-design-168ce33d82bc9d6823f5a58bc1a51092_screen.jpg?ts=1566582969" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Third slide label</h5>
-                          <p>Some representative placeholder content for the third slide.</p>
+                    </article>
+                    <article class="acuacultura__container">
+                        <div class="container__career">
+                            <div class="info">
+                                <h2>Ingeniería en Acuacultura</h2>
+                                <p>Formar profesionales capaces de desarrollar cultivos acuícolas, así como transferir, adaptar y crear tecnologías con fines productivos y de investigación, brindar orientación de manera integral y asistencia técnica con calidad y rigor científico que contribuya al progreso de la acuacultura en la región y el país.</p>
+                                <div class="enlace">
+                                    <a href="">Más información</a>
+                                </div>                                
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
+                    </article>
+                    <article class="informatica__container">
+                        <div class="container__career">
+                            <div class="info">
+                                <h2>Ingeniería en Informática Administrativa</h2>
+                                <p>Formar profesionales competentes en Informática Administrativa que ofrezcan servicios y soluciones eficientes a las Organizaciones mediante el desarrollo y administración de sistemas de información.</p>
+                                <div class="enlace">
+                                    <a href="">Más información</a>
+                                </div>                                
+                            </div>
+                        </div>
+                    </article>
+                    <article class="derecho__container">
+                        <div class="container__career">
+                            <div class="info">
+                                <h2>Licenciatura en Derecho</h2>
+                                <p>Formar profesionales del Derecho respetuosos de los valores y los derechos humanos, que apliquen los conocimientos teóricos y prácticos en los diferentes campos de las ciencias, con énfasis en su vertiente jurídica, utilizando las competencias adquiridas en beneficio del entorno nacional e internacional.</p>
+                                <div class="enlace">
+                                    <a href="">Más información</a>
+                                </div>                                
+                            </div>
+                        </div>
+                    </article>
+                    <article class="alimentos__container">
+                        <div class="container__career">
+                            <div class="info">
+                                <h2>Ingeniería en Alimentos</h2>
+                                <p>La licenciatura de Ingeniería en Alimentos forma profesionistas para evaluar los recursos susceptibles de transformarse en alimentos y establecer los procesos tecnológicos para utilizarlos en bienestar de la comunidad, dentro del marco de las transformaciones económicas y sociales del país.</p>
+                                <div class="enlace">
+                                    <a href="">Más información</a>
+                                </div>                                
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </section>
-        </header>
-        <main>
-            <section id="carreras" class="index-careers">
-                <h1>Carreras</h1>
-                <section class="careers__container-desktop">
-                    <div class="career-names">
-                        <article class="enfermeria">
-                            <p>Enfermería</p>
-                        </article>
-                        <article class="administracion">
-                            <p>Administración</p>
-                        </article>
-                        <article class="acuacultura">
-                            <p>Acuacultura</p>
-                        </article>
-                        <article class="informatica">
-                            <p>Informática</p>
-                        </article>
-                        <article class="derecho">
-                            <p>Derecho</p>
-                        </article>
-                        <article class="alimentos">
-                            <p>Alimentos</p>
-                        </article>
-                    </div>
-                    <div class="information-career">
-                        <article class="enfermeria__container">
-                            <div class="container__career">
-                                <div class="info">
-                                    <h2>Licenciatura en Enfermería</h2>
-                                    <p>Formar profesionales de la enfermería con sólidas bases científicas, metodológicas, tecnológicas y humanísticas para brindar cuidado, a las personas y a las familias durante los estados de salud y enfermedad, en el marco de los sistemas de atención a la salud, aplicando el proceso de enfermería basado enlas teorías de la disciplina</p>
-                                    <div class="enlace">
-                                        <a href="">Más información</a>
-                                    </div>                                
-                                </div>
-                            </div>
-                        </article>
-                        <article class="administracion__container">
-                            <div class="container__career">
-                                <div class="info">
-                                    <h2>Licenciatura en Administración</h2>
-                                    <p>Formar profesionales en administración capaces de desarrollar innovaciones e interpretar tendencias económicas, sociales, políticas, culturales, ambientales y tecnológicas que impacten directamente en la calidad de los organismos públicos, privados y sociales; lo que permitirá formar un profesional capaz de solucionar problemáticas y tomar decisiones dentro de un marco de valores éticos y humanísticos.</p>
-                                    <div class="enlace">
-                                        <a href="">Más información</a>
-                                    </div>                                
-                                </div>
-                            </div>
-                        </article>
-                        <article class="acuacultura__container">
-                            <div class="container__career">
-                                <div class="info">
-                                    <h2>Ingeniería en Acuacultura</h2>
-                                    <p>Formar profesionales capaces de desarrollar cultivos acuícolas, así como transferir, adaptar y crear tecnologías con fines productivos y de investigación, brindar orientación de manera integral y asistencia técnica con calidad y rigor científico que contribuya al progreso de la acuacultura en la región y el país.</p>
-                                    <div class="enlace">
-                                        <a href="">Más información</a>
-                                    </div>                                
-                                </div>
-                            </div>
-                        </article>
-                        <article class="informatica__container">
-                            <div class="container__career">
-                                <div class="info">
-                                    <h2>Ingeniería en Informática Administrativa</h2>
-                                    <p>Formar profesionales competentes en Informática Administrativa que ofrezcan servicios y soluciones eficientes a las Organizaciones mediante el desarrollo y administración de sistemas de información.</p>
-                                    <div class="enlace">
-                                        <a href="">Más información</a>
-                                    </div>                                
-                                </div>
-                            </div>
-                        </article>
-                        <article class="derecho__container">
-                            <div class="container__career">
-                                <div class="info">
-                                    <h2>Licenciatura en Derecho</h2>
-                                    <p>Formar profesionales del Derecho respetuosos de los valores y los derechos humanos, que apliquen los conocimientos teóricos y prácticos en los diferentes campos de las ciencias, con énfasis en su vertiente jurídica, utilizando las competencias adquiridas en beneficio del entorno nacional e internacional.</p>
-                                    <div class="enlace">
-                                        <a href="">Más información</a>
-                                    </div>                                
-                                </div>
-                            </div>
-                        </article>
-                        <article class="alimentos__container">
-                            <div class="container__career">
-                                <div class="info">
-                                    <h2>Ingeniería en Alimentos</h2>
-                                    <p>La licenciatura de Ingeniería en Alimentos forma profesionistas para evaluar los recursos susceptibles de transformarse en alimentos y establecer los procesos tecnológicos para utilizarlos en bienestar de la comunidad, dentro del marco de las transformaciones económicas y sociales del país.</p>
-                                    <div class="enlace">
-                                        <a href="">Más información</a>
-                                    </div>                                
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </section>
-                <section class="careers__container-mobile">
-                        <article class="enfermeria">
-                            <div class="title">
-                                <div class="career__p">
-                                    <p>Enfermería</p>
-                                </div>                            
-                                <div class="career__icon">
-                                    <img src="./assets/img/expand-arrow.png" alt="Icono expandir">
-                                </div> 
-                            </div>
-                            <div class="information-career"></div>
-                        </article>
-                        <article class="administracion">
-                            <div class="title">
-                                <div class="career__p">
-                                    <p>Administración</p>
-                                </div>                            
-                                <div class="career__icon">
-                                    <img src="./assets/img/expand-arrow.png" alt="Icono expandir">
-                                </div>                            
-                            </div>
-                            <div class="information-career"></div>
-                        </article>
-                        <article class="acuacultura">
-                            <div class="title">
-                                <div class="career__p">
-                                    <p>Acuacultura</p>
-                                </div>                            
-                                <div class="career__icon">
-                                    <img src="./assets/img/expand-arrow.png" alt="Icono expandir">
-                                </div>  
-                            <div class="information-career"></div>
-                        </article>
-                        <article class="informatica">
-                            <div class="title">
-                                <div class="career__p">
-                                    <p>Informática</p>
-                                </div>                            
-                                <div class="career__icon">
-                                    <img src="./assets/img/expand-arrow.png" alt="Icono expandir">
-                                </div>  
-                            </div>
-                            <div class="information-career"></div>
-                        </article>
-                        <article class="derecho">
-                            <div class="title">
-                                <div class="career__p">
-                                    <p>Derecho</p>
-                                </div>                            
-                                <div class="career__icon">
-                                    <img src="./assets/img/expand-arrow.png" alt="Icono expandir">
-                                </div>  
-                            </div>
-                            <div class="information-career"></div>
-                        </article>
-                        <article class="alimentos">
-                            <div class="title">
-                                <div class="career__p">
-                                    <p>Alimentos</p>
-                                </div>                            
-                                <div class="career__icon">
-                                    <img src="./assets/img/expand-arrow.png" alt="Icono expandir">
-                                </div>  
-                            </div>
-                            <div class="information-career"></div>
-                        </article>
-                </section>
+            <section class="careers__container-mobile">
+                    <article class="enfermeria">
+                        <div class="title">
+                            <div class="career__p">
+                                <p>Enfermería</p>
+                            </div>                            
+                            <div class="career__icon">
+                                <img src="./assets/img/expand-arrow.png" alt="Icono expandir">
+                            </div> 
+                        </div>
+                        <div class="information-career"></div>
+                    </article>
+                    <article class="administracion">
+                        <div class="title">
+                            <div class="career__p">
+                                <p>Administración</p>
+                            </div>                            
+                            <div class="career__icon">
+                                <img src="./assets/img/expand-arrow.png" alt="Icono expandir">
+                            </div>                            
+                        </div>
+                        <div class="information-career"></div>
+                    </article>
+                    <article class="acuacultura">
+                        <div class="title">
+                            <div class="career__p">
+                                <p>Acuacultura</p>
+                            </div>                            
+                            <div class="career__icon">
+                                <img src="./assets/img/expand-arrow.png" alt="Icono expandir">
+                            </div>  
+                        <div class="information-career"></div>
+                    </article>
+                    <article class="informatica">
+                        <div class="title">
+                            <div class="career__p">
+                                <p>Informática</p>
+                            </div>                            
+                            <div class="career__icon">
+                                <img src="./assets/img/expand-arrow.png" alt="Icono expandir">
+                            </div>  
+                        </div>
+                        <div class="information-career"></div>
+                    </article>
+                    <article class="derecho">
+                        <div class="title">
+                            <div class="career__p">
+                                <p>Derecho</p>
+                            </div>                            
+                            <div class="career__icon">
+                                <img src="./assets/img/expand-arrow.png" alt="Icono expandir">
+                            </div>  
+                        </div>
+                        <div class="information-career"></div>
+                    </article>
+                    <article class="alimentos">
+                        <div class="title">
+                            <div class="career__p">
+                                <p>Alimentos</p>
+                            </div>                            
+                            <div class="career__icon">
+                                <img src="./assets/img/expand-arrow.png" alt="Icono expandir">
+                            </div>  
+                        </div>
+                        <div class="information-career"></div>
+                    </article>
             </section>
-    
-            <section class="map__section" id="map">
-                <h1>Ubicación</h1>
-                <div class="map__container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.4197495136095!2d-91.42765658578932!3d17.487465104515504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85f390bd3d646403%3A0x8b2a9f1c251bee35!2sUJAT%20Divisi%C3%B3n%20Acad%C3%A9mica%20Multidisciplinaria%20de%20los%20R%C3%ADos!5e0!3m2!1sen!2smx!4v1636918716492!5m2!1sen!2smx" allowfullscreen="" loading="lazy"></iframe>
-                </div>            
+        </section>
+        <section id="eventos" class="index-events">
+            <h1>Eventos</h1>
+            <section class="events__container">
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
             </section>
-            <section id="eventos" class="index-events">
-                <h1>Eventos</h1>
-                <section class="events__container">
-                    <article></article>
-                    <article></article>
-                    <article></article>
-                    <article></article>
-                </section>
-            </section>
-            <section id="tramites" class="index-processes">
-                <h1>Trámites</h1>
-                <section class="processes__container">
-                    <article></article>
-                    <article></article>
-                    <article></article>
-                    <article></article>
-                </section>
-            </section>
-        </main>
+        </section>
+        <section class="map__section" id="map">
+            <h1>Ubicación</h1>
+            <div class="map__container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.4197495136095!2d-91.42765658578932!3d17.487465104515504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85f390bd3d646403%3A0x8b2a9f1c251bee35!2sUJAT%20Divisi%C3%B3n%20Acad%C3%A9mica%20Multidisciplinaria%20de%20los%20R%C3%ADos!5e0!3m2!1sen!2smx!4v1636918716492!5m2!1sen!2smx" allowfullscreen="" loading="lazy"></iframe>
+            </div>            
+        </section>
     </main>
     
     <footer>
@@ -266,9 +226,9 @@
                     <img src="./assets/img/logodamr_vertical.png" alt="Logo Damrios pie de página">
                 </div>
                 <nav class="social-media">
-                    <a href=""><img src="./assets/img/facebook-icon.png" alt=""></a>
-                    <a href=""><img src="./assets/img/email-icon.png" alt=""></a>
-                    <a href=""><img src="./assets/img/call-icon.png" alt=""></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-envelope"></i></a>
+                    <a href=""><i class="bi bi-telephone"></i></a>
                 </nav>
                 <h2 class="footer__title">
                     Contáctenos
@@ -291,7 +251,6 @@
         
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

@@ -1,29 +1,16 @@
-.index-events,
-.index-processes {
+.index-events {
   @extend %contenedorMovil;
   max-width: $maxWidthContainer;
   padding: 20px 0;
 
-  .events__container,
-  .processes__container {
+  .events__container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-row-gap: 25px;
 
     article {
-      background-image: url(../img/conference.jpg);
-      background-position: center center;
-      background-size: cover;
       height: 350px;
+      border: 1px solid gray;
     }
   }
-
-  .processes__container article {
-    background-image: url(../img/folder.jpg);
-  }
-}
-
-.index-processes {
-  padding-bottom: 50px;
 }

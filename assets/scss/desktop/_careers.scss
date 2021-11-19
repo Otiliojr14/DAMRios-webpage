@@ -1,0 +1,174 @@
+.index-careers {
+  .careers__container-desktop {
+    display: block;
+
+    .career-names {
+      display: flex;
+
+      article {
+        flex-grow: 1;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: hsl(0, 0%, 100%);
+        text-align: center;
+        padding: 10px 0;
+        transition: flex-grow 0.2s ease;
+
+        &:hover {
+          flex-grow: 3;
+          cursor: pointer;
+        }
+      }
+
+      .enfermeria {
+        background-color: hsl(171, 69%, 51%);
+      }
+      .administracion {
+        background-color: hsl(0, 83%, 53%);
+      }
+      .acuacultura {
+        background-color: hsl(111, 64%, 39%);
+      }
+      .informatica {
+        background-color: hsl(214, 53%, 51%);
+      }
+      .derecho {
+        background-color: hsl(24, 91%, 35%);
+      }
+      .alimentos {
+        background-color: hsl(49, 94%, 49%);
+      }
+    }
+
+    .information-career {
+      height: 350px;
+      background-color: hsl(0, 0%, 88%);
+      .enfermeria__container {
+        background-image: url(../img/nursing.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 100%;
+
+        .enlace a {
+          transition: background-color 0.2s ease;
+          &:hover {
+            background-color: hsl(171, 69%, 51%);
+          }
+        }
+      }
+
+      .administracion__container {
+        background-image: url(../img/administracion.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 100%;
+        display: none;
+
+        .enlace a {
+          transition: background-color 0.2s ease;
+          &:hover {
+            background-color: hsl(0, 83%, 53%);
+          }
+        }
+      }
+
+      .acuacultura__container {
+        background-image: url(../img/acuacultura.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 100%;
+        display: none;
+
+        .enlace a {
+          transition: background-color 0.2s ease;
+          &:hover {
+            background-color: hsl(111, 64%, 39%);
+          }
+        }
+      }
+
+      .informatica__container {
+        background-image: url(../img/informatica.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 100%;
+        display: none;
+
+        .enlace a {
+          transition: background-color 0.2s ease;
+          &:hover {
+            background-color: hsl(214, 53%, 51%);
+          }
+        }
+      }
+
+      .derecho__container {
+        background-image: url(../img/derecho.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 100%;
+        display: none;
+
+        .enlace a {
+          transition: background-color 0.2s ease;
+          &:hover {
+            background-color: hsl(24, 91%, 35%);
+          }
+        }
+      }
+
+      .alimentos__container {
+        background-image: url(../img/alimentos.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 100%;
+        display: none;
+
+        .enlace a {
+          transition: background-color 0.2s ease;
+          &:hover {
+            background-color: hsl(49, 94%, 49%);
+          }
+        }
+      }
+
+      .container__career {
+        background: linear-gradient(
+          302deg,
+          black 5%,
+          black 10%,
+          rgba(255, 255, 255, 0) 85%
+        );
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .info {
+          grid-column: 2 / 3;
+          text-transform: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          grid-column-gap: 20px;
+          text-align: end;
+          padding: 20px;
+
+          .enlace {
+            text-align: end;
+          }
+
+          a {
+            text-transform: uppercase;
+            color: hsl(0, 0%, 100%);
+            border: 2px solid hsl(0, 0%, 100%);
+            padding: 10px 20px;
+          }
+          // align-items: ;
+        }
+      }
+    }
+  }
+  .careers__container-mobile {
+    display: none;
+  }
+}
