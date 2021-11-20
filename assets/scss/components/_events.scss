@@ -9,8 +9,25 @@
     grid-row-gap: 25px;
 
     article {
-      height: 350px;
+      height: auto;
       border: 1px solid gray;
+      padding: 20px 20px 10px 20px;
+      border-top: 5px solid #7ab829;
+      .title-header {
+        min-height: 100px;
+        border-bottom: 5px solid gray;
+      }
+      .event-button {
+        display: flex;
+        justify-content: end;
+        padding: 10px 0;
+        a {
+          background-color: #7ab829;
+          text-transform: uppercase;
+          color: white;
+          padding: 10px 20px;
+        }
+      }
     }
   }
 }

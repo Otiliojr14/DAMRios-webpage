@@ -69,6 +69,9 @@ h1 {
   -ms-grid-columns: 1fr 2fr;
   grid-template-columns: 1fr 2fr;
 }
+.header__nav .nav__container .nav-logo {
+  width: 35%;
+}
 .header__nav .nav__container .nav-menu-movil {
   display: none;
 }
@@ -100,8 +103,8 @@ h1 {
 }
 
 .index-events .events__container {
-  -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 15px;
 }
 

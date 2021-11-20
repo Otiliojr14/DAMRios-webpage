@@ -16,6 +16,9 @@
     @extend %contenedorDesktop;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    .nav-logo {
+      width: 35%;
+    }
     .nav-menu-movil {
       display: none;
     }
@@ -47,7 +50,7 @@
 
 .index-events {
   .events__container {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 15px;
   }
 }
