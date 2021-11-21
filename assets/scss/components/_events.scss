@@ -21,11 +21,17 @@
         display: flex;
         justify-content: end;
         padding: 10px 0;
+
         a {
-          background-color: #7ab829;
+          background-color: hsl(86, 64%, 44%);
           text-transform: uppercase;
           color: white;
           padding: 10px 20px;
+          transition: background-color 0.2s ease;
+
+          &:hover {
+            background-color: hsl(86, 64%, 35%);
+          }
         }
       }
     }

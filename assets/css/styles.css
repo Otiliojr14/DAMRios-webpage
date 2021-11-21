@@ -187,6 +187,7 @@ footer .footer-information, .index-events, .index-careers, .header__nav .nav__co
   font-weight: bold;
   color: white;
   text-align: center;
+  height: 100%;
 }
 .index-careers article .title {
   display: -webkit-box;
@@ -249,6 +250,134 @@ footer .footer-information, .index-events, .index-careers, .header__nav .nav__co
   border: none;
 }
 
+.careers__container-mobile .information-career {
+  height: 450px;
+  background-color: #e0e0e0;
+  display: none;
+}
+.careers__container-mobile .information-career .container__career {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, black), color-stop(10%, black), color-stop(85%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(0deg, black 5%, black 10%, rgba(255, 255, 255, 0) 85%);
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.careers__container-mobile .information-career .container__career .info {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-transform: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-column-gap: 20px;
+  text-align: center;
+  padding: 25px 10px;
+}
+.careers__container-mobile .information-career .container__career .info p {
+  font-size: 1.6rem;
+}
+.careers__container-mobile .information-career .container__career .info h2 {
+  font-size: 2.3rem;
+}
+.careers__container-mobile .information-career .container__career .info .enlace {
+  text-align: center;
+}
+.careers__container-mobile .information-career .container__career .info a {
+  text-transform: uppercase;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+}
+.careers__container-mobile .enfermeria__container {
+  background-image: url(../img/nursing.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+.careers__container-mobile .enfermeria__container .enlace a {
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.careers__container-mobile .enfermeria__container .enlace a:hover {
+  background-color: #2cd8be;
+}
+.careers__container-mobile .administracion__container {
+  background-image: url(../img/administracion.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+.careers__container-mobile .administracion__container .enlace a {
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.careers__container-mobile .administracion__container .enlace a:hover {
+  background-color: #eb2424;
+}
+.careers__container-mobile .acuacultura__container {
+  background-image: url(../img/acuacultura.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+.careers__container-mobile .acuacultura__container .enlace a {
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.careers__container-mobile .acuacultura__container .enlace a:hover {
+  background-color: #37a324;
+}
+.careers__container-mobile .informatica__container {
+  background-image: url(../img/informatica.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+.careers__container-mobile .informatica__container .enlace a {
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.careers__container-mobile .informatica__container .enlace a:hover {
+  background-color: #4079c4;
+}
+.careers__container-mobile .derecho__container {
+  background-image: url(../img/derecho.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+.careers__container-mobile .derecho__container .enlace a {
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.careers__container-mobile .derecho__container .enlace a:hover {
+  background-color: #aa4908;
+}
+.careers__container-mobile .alimentos__container {
+  background-image: url(../img/alimentos.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+.careers__container-mobile .alimentos__container .enlace a {
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.careers__container-mobile .alimentos__container .enlace a:hover {
+  background-color: #f2c707;
+}
+
 .index-events {
   max-width: 1200px;
   padding: 20px 0;
@@ -280,10 +409,15 @@ footer .footer-information, .index-events, .index-careers, .header__nav .nav__co
   padding: 10px 0;
 }
 .index-events .events__container article .event-button a {
-  background-color: #7ab829;
+  background-color: #7ab828;
   text-transform: uppercase;
   color: white;
   padding: 10px 20px;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.index-events .events__container article .event-button a:hover {
+  background-color: #619220;
 }
 
 footer {
