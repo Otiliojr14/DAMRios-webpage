@@ -2,7 +2,7 @@
 /* Estilos globales */
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -82,8 +82,8 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
 }
 .header__nav .nav__container .nav-menu a {
   padding: 5px 25px;
@@ -104,7 +104,7 @@ h1 {
 
 .index-events .events__container {
   -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 15px;
 }
 
@@ -116,8 +116,8 @@ footer .footer-information {
 }
 footer .footer-information article {
   -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
+  -ms-grid-row-align: start;
+  align-self: start;
 }
 footer .footer-information .footer-badge {
   position: relative;
@@ -137,8 +137,8 @@ footer .footer-information .footer-badge .footer-image-logo {
 }
 .index-careers .careers__container-desktop .career-names article {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
@@ -147,12 +147,13 @@ footer .footer-information .footer-badge .footer-image-logo {
   -webkit-transition: flex-grow 0.2s ease, -webkit-box-flex 0.2s ease;
   transition: flex-grow 0.2s ease, -webkit-box-flex 0.2s ease;
   transition: flex-grow 0.2s ease;
-  transition: flex-grow 0.2s ease, -webkit-box-flex 0.2s ease, -ms-flex-positive 0.2s ease;
+  transition: flex-grow 0.2s ease, -webkit-box-flex 0.2s ease,
+    -ms-flex-positive 0.2s ease;
 }
 .index-careers .careers__container-desktop .career-names article:hover {
   -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
+  -ms-flex-positive: 3;
+  flex-grow: 3;
   cursor: pointer;
 }
 .index-careers .careers__container-desktop .career-names .enfermeria {
@@ -177,98 +178,188 @@ footer .footer-information .footer-badge .footer-image-logo {
   height: 350px;
   background-color: #e0e0e0;
 }
-.index-careers .careers__container-desktop .information-career .enfermeria__container {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .enfermeria__container {
   background-image: url(../img/nursing.jpg);
   background-position: center center;
   background-size: cover;
   height: 100%;
 }
-.index-careers .careers__container-desktop .information-career .enfermeria__container .enlace a {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .enfermeria__container
+  .enlace
+  a {
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
-.index-careers .careers__container-desktop .information-career .enfermeria__container .enlace a:hover {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .enfermeria__container
+  .enlace
+  a:hover {
   background-color: #2cd8be;
 }
-.index-careers .careers__container-desktop .information-career .administracion__container {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .administracion__container {
   background-image: url(../img/administracion.jpg);
   background-position: center center;
   background-size: cover;
   height: 100%;
   display: none;
 }
-.index-careers .careers__container-desktop .information-career .administracion__container .enlace a {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .administracion__container
+  .enlace
+  a {
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
-.index-careers .careers__container-desktop .information-career .administracion__container .enlace a:hover {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .administracion__container
+  .enlace
+  a:hover {
   background-color: #eb2424;
 }
-.index-careers .careers__container-desktop .information-career .acuacultura__container {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .acuacultura__container {
   background-image: url(../img/acuacultura.jpg);
   background-position: center center;
   background-size: cover;
   height: 100%;
   display: none;
 }
-.index-careers .careers__container-desktop .information-career .acuacultura__container .enlace a {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .acuacultura__container
+  .enlace
+  a {
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
-.index-careers .careers__container-desktop .information-career .acuacultura__container .enlace a:hover {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .acuacultura__container
+  .enlace
+  a:hover {
   background-color: #37a324;
 }
-.index-careers .careers__container-desktop .information-career .informatica__container {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .informatica__container {
   background-image: url(../img/informatica.jpg);
   background-position: center center;
   background-size: cover;
   height: 100%;
   display: none;
 }
-.index-careers .careers__container-desktop .information-career .informatica__container .enlace a {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .informatica__container
+  .enlace
+  a {
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
-.index-careers .careers__container-desktop .information-career .informatica__container .enlace a:hover {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .informatica__container
+  .enlace
+  a:hover {
   background-color: #4079c4;
 }
-.index-careers .careers__container-desktop .information-career .derecho__container {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .derecho__container {
   background-image: url(../img/derecho.jpg);
   background-position: center center;
   background-size: cover;
   height: 100%;
   display: none;
 }
-.index-careers .careers__container-desktop .information-career .derecho__container .enlace a {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .derecho__container
+  .enlace
+  a {
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
-.index-careers .careers__container-desktop .information-career .derecho__container .enlace a:hover {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .derecho__container
+  .enlace
+  a:hover {
   background-color: #aa4908;
 }
-.index-careers .careers__container-desktop .information-career .alimentos__container {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .alimentos__container {
   background-image: url(../img/alimentos.jpg);
   background-position: center center;
   background-size: cover;
   height: 100%;
   display: none;
 }
-.index-careers .careers__container-desktop .information-career .alimentos__container .enlace a {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .alimentos__container
+  .enlace
+  a {
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
-.index-careers .careers__container-desktop .information-career .alimentos__container .enlace a:hover {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .alimentos__container
+  .enlace
+  a:hover {
   background-color: #f2c707;
 }
-.index-careers .careers__container-desktop .information-career .container__career {
-  background: linear-gradient(302deg, black 5%, black 10%, rgba(255, 255, 255, 0) 85%);
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .container__career {
+  background: linear-gradient(
+    302deg,
+    black 5%,
+    black 10%,
+    rgba(255, 255, 255, 0) 85%
+  );
   height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 }
-.index-careers .careers__container-desktop .information-career .container__career .info {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .container__career
+  .info {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -278,18 +369,28 @@ footer .footer-information .footer-badge .footer-image-logo {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   grid-column-gap: 20px;
   text-align: end;
   padding: 20px;
 }
-.index-careers .careers__container-desktop .information-career .container__career .info .enlace {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .container__career
+  .info
+  .enlace {
   text-align: end;
 }
-.index-careers .careers__container-desktop .information-career .container__career .info a {
+.index-careers
+  .careers__container-desktop
+  .information-career
+  .container__career
+  .info
+  a {
   text-transform: uppercase;
   color: white;
   border: 2px solid white;
